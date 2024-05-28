@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth Redirect</title>
+</head>
+<body>
+    <h1>Instagram OAuth Redirect</h1>
+    <p>認証コードを処理しています...</p>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get('code');
+        if (code) {
+            // 認証コードをサーバーに送信するなどの処理をここで行います。
+            console.log('Authorization Code:', code);
+        } else {
+            console.log('Authorization Code not found');
+        }
+    </script>
+</body>
+</html>
